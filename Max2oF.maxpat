@@ -10,7 +10,7 @@
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 305.0, 626.0, 978.0, 620.0 ],
+		"rect" : [ 144.0, 630.0, 978.0, 620.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
@@ -45,7 +45,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 221.5, 415.0, 145.0, 22.0 ],
-					"text" : "/sound -3.287686"
+					"text" : "/sound -0.68919"
 				}
 
 			}
@@ -80,7 +80,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 0,
 					"patching_rect" : [ 221.5, 448.0, 145.0, 22.0 ],
-					"text" : "udpsend 127.0.0.1 54514"
+					"text" : "udpsend 127.0.0.1 54414"
 				}
 
 			}
