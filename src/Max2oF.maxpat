@@ -10,7 +10,7 @@
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 241.0, 621.0, 978.0, 620.0 ],
+		"rect" : [ 1061.0, 611.0, 978.0, 620.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
@@ -39,6 +39,17 @@
 		"subpatcher_template" : "",
 		"boxes" : [ 			{
 				"box" : 				{
+					"id" : "obj-24",
+					"maxclass" : "newobj",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 340.0, 370.0, 145.0, 22.0 ],
+					"text" : "udpsend 127.0.0.1 54514"
+				}
+
+			}
+, 			{
+				"box" : 				{
 					"format" : 6,
 					"id" : "obj-23",
 					"maxclass" : "flonum",
@@ -46,7 +57,7 @@
 					"numoutlets" : 2,
 					"outlettype" : [ "", "bang" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 175.0, 536.0, 50.0, 22.0 ]
+					"patching_rect" : [ 340.0, 322.0, 50.0, 22.0 ]
 				}
 
 			}
@@ -227,6 +238,13 @@
 			}
 , 			{
 				"patchline" : 				{
+					"destination" : [ "obj-24", 0 ],
+					"source" : [ "obj-23", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
 					"destination" : [ "obj-5", 1 ],
 					"midpoints" : [ 35.25, 306.0, 262.5, 306.0 ],
 					"order" : 0,
@@ -314,6 +332,7 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-23", 0 ],
+					"midpoints" : [ 179.5, 498.0, 327.0, 498.0, 327.0, 318.0, 349.5, 318.0 ],
 					"source" : [ "obj-9", 4 ]
 				}
 
